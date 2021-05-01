@@ -7,11 +7,13 @@ namespace storeRestAPI.Model
 {
     public class order
     {
-        public Int16 id { get; set; }
-        public Int16 idProduct { get; set; }
-        public Int16 idUser { get; set; }
-        public Int16 amount { get; set; }
-        public Decimal price { get; set; }
-        public DateTime dateTime { get; set; }
+        public Int16 Id { get; set; }
+        public Int16 Amount { get; set; }
+        public decimal Price { get; set; }
+        public DateTime DateTime { get; set; }
+        public product product { get; set; }
+        public user user { get; set; }
+       // public Int16 productId { get; set; }
+       // public Int16 userId { get; set; }
     }
 }
