@@ -18,8 +18,7 @@ namespace storeRestAPI.Controllers
 
         public userController(storeContext context)
         {
-            _context = context;
-          _context.users.Add(new user { Id = 2, Name = "sjd", Mail = "fjf" });
+            _context = context;     
         }
 
         // GET: api/users
