@@ -7,10 +7,14 @@ using System.Threading.Tasks;
 
 namespace storeRestAPI.Context
 {
-    interface IstoreContext
+    public interface IstoreContext
     {
         DbSet<user> users { get; set; } 
         DbSet<product> products { get; set; }
         DbSet<order> orders { get; set; }
+        int SaveChanges();
+        void MarkAsModifiedProduct(product item);
+        void MarkAsModifiedUser(user item);
+        void MarkAsModifiedOrder(order item);
     }
 }
