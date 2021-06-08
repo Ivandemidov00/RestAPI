@@ -12,7 +12,6 @@ namespace storeRestAPI.Model
         public string Name { get; set; }
         public string Description { get; set; }
         public decimal Price { get; set; }
-        public Int16 AmountAvailability { get; set; }
         [JsonIgnore]
         public List<order> orders { get; set; }
 
